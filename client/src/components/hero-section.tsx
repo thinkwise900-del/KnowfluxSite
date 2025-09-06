@@ -1,5 +1,6 @@
 import { Brain, ServerCog, TrendingUp, Users, Lightbulb, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Mascot from "@/components/mascot";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -34,6 +35,17 @@ export default function HeroSection() {
                 To democratize AI technology by creating accessible, scalable solutions that drive 
                 meaningful business transformation across diverse industries.
               </p>
+            </div>
+            
+            {/* Mascot Welcome */}
+            <div className="flex justify-center lg:justify-start">
+              <Mascot 
+                variant="waving" 
+                size="lg" 
+                position="left"
+                message="Welcome to the future of AI! I'm Flux, and I'm excited to show you what we can do together! 🚀"
+                className="max-w-md"
+              />
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
