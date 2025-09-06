@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
+import Mascot from "@/components/mascot";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -138,6 +139,16 @@ export default function ContactSection() {
           </div>
           
           <div className="bg-card rounded-2xl p-8 shadow-lg border border-border" data-testid="contact-form">
+            {/* Mascot Contact Helper */}
+            <div className="mb-6 flex justify-center">
+              <Mascot 
+                variant="celebrating" 
+                size="md" 
+                position="center"
+                message="I'm here to help you get in touch! Fill out this form and we'll get back to you super fast! ⚡"
+                className="max-w-sm"
+              />
+            </div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">

@@ -1,5 +1,6 @@
 import { Brain, Smartphone, ServerCog, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Mascot from "@/components/mascot";
 
 const products = [
   {
@@ -54,6 +55,17 @@ export default function ProductsSection() {
             Four innovative solutions designed to revolutionize how businesses operate, 
             connect, and scale in the digital age.
           </p>
+          
+          {/* Mascot Product Introduction */}
+          <div className="flex justify-center mt-8">
+            <Mascot 
+              variant="thinking" 
+              size="md" 
+              position="center"
+              message="These are our amazing AI-powered products! Each one is designed to solve real business challenges. Click on any card to learn more!"
+              className="max-w-lg"
+            />
+          </div>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">

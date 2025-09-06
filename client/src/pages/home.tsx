@@ -4,6 +4,7 @@ import ProductsSection from "@/components/products-section";
 import AboutSection from "@/components/about-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
+import FloatingMascot from "@/components/floating-mascot";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutSection />
       <ContactSection />
       <Footer />
+      <FloatingMascot />
     </div>
   );
 }
